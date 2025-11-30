@@ -1,4 +1,4 @@
-#This script here is the code for the random forest ML model. It involves training the ML model with 80% of the datset entries while reseving the other 20% for testing. Some charts/graphs are also included here to better help visualize the accuracy of this model, we will also use R^2, MAE and RMSE as metrics to measure this. We could definetly move the charts and graphs to the evaluation file though.
+#This script here is the code for the random forest ML model. It involves training the ML model with 80% of the datset entries while reseving the other 20% for testing. Some charts/graphs are also included here but we could definetly move them to the evaluation file.
 
 # import commands
 
