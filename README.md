@@ -1,2 +1,3 @@
 # MachineLearningProject
-This Project is for DS3000A, it's reflects on car data
+
+This Project is for DS3000A, it's reflects on car data by predicting the resell value of a car based on factors such as milage, brand, fuel type, etc. To implement this, we will have four different trained ML models which we will compare with each other based on accuracy in the testing stage. The model with the highest accuracy will be chosen as the final model for our project. We will use R^2, MAE and RMSE values to measure the accuracy of these models, while also using graphs and charts to help better visualize the overall performace, and how far off the predictions are from the actual price.
