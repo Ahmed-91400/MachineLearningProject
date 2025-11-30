@@ -67,3 +67,28 @@ print("Random Forest Performance:")
 print("MAE:", mae)
 print("RMSE:", rmse)
 print("R² Score:", r2)
+
+
+#These here are for graphs
+
+#This graph shows the residual plot (how far off numerically the model is from the actual price, based on test samples)
+residuals = y_test - y_pred
+
+plt.figure(figsize=(8, 6))
+plt.scatter(y_pred, residuals, alpha=0.3)
+plt.axhline(0, color="black", linestyle="--")
+plt.xlabel("Predicted Price")
+plt.ylabel("Residual (Actual - Predicted)")
+plt.title("Residual Plot for Random Forest")
+plt.show()
+
+#This graph here shows a similar concept of predicted v actual price, but slightly different
+plt.figure(figsize=(8, 6))
+plt.scatter(y_test, y_pred, alpha=0.3)
+plt.xlabel("Actual Price")
+plt.ylabel("Predicted Price")
+plt.title("Random Forest: Actual vs Predicted Prices")
+plt.plot([y_test.min(), y_test.max()],
+         [y_test.min(), y_test.max()],
+         linestyle="--")
+plt.show()
